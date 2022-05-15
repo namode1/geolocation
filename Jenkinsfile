@@ -10,22 +10,16 @@
 	    stages {
 	        stage('maven package') {
 	            steps {
-	               sh mvn 'clean'
+                 sh mvn 'clean'
                  sh mvn 'install'
                  sh mvn 'package'
 	            }
 	        }
 	        stage('test') {
 	            steps {
-	                sh mvn 'test'
-	            }
+	         sh mvn 'test'
 	        }
-	        stage('Deploy') {
-	            steps {
-	                echo 'Deploy Step'
-	                sleep 5
-	          }
-	      }
-	  }
+	    }
+	}
 } 
 
