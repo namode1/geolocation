@@ -18,7 +18,7 @@ pipeline {
                 echo 'test'
             	  }
                }
-            }
+           }
         }  
     }
 }
