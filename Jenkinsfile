@@ -4,7 +4,7 @@
         maven 'M2_HOME'
    }
       triggers {
-  pollSCM '* * * * *'
+  pollSCM ('* * * * *')
 }
 
 	    stages {
